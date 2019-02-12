@@ -6,11 +6,12 @@
         <title>Grid</title>
         <link rel="stylesheet" href="css/styles.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="/libs/YTPlayer-master/css/jquery.mb.YTPlayer.css">
 
         <!-- Owl Carousel -->
         <link rel="stylesheet" href="/libs/owl-carousel/assets/owl.carousel.min.css">
         <link rel="stylesheet" href="/libs/owl-carousel/assets/owl.theme.default.min.css">
-      
+       
     </head>
     <body>
         <div class="debug">
@@ -46,7 +47,7 @@
        
        
         <header>
-          <section class="top-nav">
+          <!-- <section class="top-nav">
             <div class="wrapper">
               <div class="top-bar">
                <ul class="top-social_btn">
@@ -60,14 +61,14 @@
                <ul class="top-contacts">
                  <li><a href="#">sales@realy.com.ua</a></li>
                  <li><a href="#">(044) 490 35 89</a></li>
-                 <!-- <li><a href="#"></a></li> -->
+                 <li><a href="#"></a></li>
                </ul>
              </div>
              
             </div>
-          </section>
+          </section> -->
 
-          <section class="top-menu">
+          <!-- <section class="top-menu"> -->
             <!-- <nav class="top-menu-nav wrapper">
               <div class="logo"><p>sfdsfs</p></div>
               <ul>
@@ -79,7 +80,7 @@
               </ul>
             </nav> -->
 
-            <div class="wrapper">
+            <!-- <div class="wrapper">
               <div id="header">
               <div class="logo">
                 <a href="#">лого</a>
@@ -94,7 +95,7 @@
                       <li><a href="#">Инструкции по эксплуатации</a></li>
                       <li><a href="#">Инструкции к перпаратам</a></li>
                       <li><a href="#">Договора страхования <br>и самокопируещиеся бланки</a></li>
-                      <!-- <li><a href="#">Contact Us</a></li> -->
+                      <li><a href="#">Contact Us</a></li>
                     </ul> 
                   </li>
                   <li class="dropdown">
@@ -134,16 +135,39 @@
               </nav>
             </div>
            
-          </div>
+          </div> -->
             
-          </section>
-          <div id="slider_container" class="owl-carousel">
+          <!-- </section> -->
+              <!-- <div id="slider_container" class="owl-carousel">
               
               <img src="img/banners/banner1.jpg" alt="34">  
-              <img src="img/banners/banner2.jpg" alt="3434">   
+              <img src="img/banners/banner2.jpg" alt="3434">    -->
               <!-- <img src="http://dummyimage.com/1280x500" alt="">  
               <img src="http://dummyimage.com/1280x500" alt="">  -->
+            <!-- </div> -->
+            <!-- <div id= "bgndVideo"  class= "player"  data-property= "{videoURL:'Fk9EBOOAYiU', containment:'#wrapper', showControls:true, autoPlay:true, loop:true, vol:50, mute:true, startAt:50, stopAt:54, stopMovieOnBlur: true, opacity:1, addRaster:true, quality:'default', optimizeDisplay:true, addFilters: {grayscale: 50,sepia: 80,opacity: 30}}" > My video </div> -->
+            <div class="wrapper">
+              <div class="content1">
+            <div id= "bgndVideo"  class= "player"  
+            data-property= "{
+              videoURL:'W90lG_Zieg4', 
+              containment:'.content1', 
+              showControls:false, 
+              autoPlay:true, 
+              loop:true, 
+              <!-- vol:50,  -->
+              mute:true, 
+              startAt:0, 
+              stopAt:54, 
+              stopMovieOnBlur: true, 
+              opacity:1, 
+              addRaster:true, 
+              quality:'default', 
+              optimizeDisplay:true, 
+              addFilters: {opacity: 100, brightness: 50}}" 
+              ></div><h1>Priz -  студия профессионального шугаринга</h1></div>
             </div>
+<!-- <p>fsdgdfgdfgdf</p> -->
         </header>
 
         <main>
@@ -317,30 +341,41 @@
             <div class="footer-list">
             
               <div>
-                <p>OOO "Реали" <br>г.Киев, б-р В.Гавела, 8 <br><a href="#">Cхема проезда</a></p>
-                <p>Время работы: <br>пн-пт, с 9:00 до 18:00</p>
+                <p>Студия шугаринга Priz<br>г. Харьков, ул. Шатилова дача, 4,<br>3 этаж, 207 офис <!-- <br><a href="#">Cхема проезда</a>--></p>
+                <p>Время работы: <br>пн-вс, с 10:00 до 20:00</p>
               </div>
             
               <div class="footer-contacts">
-                <p>тел.: (044) 490 35 89 <br>факс: (044) 490 31 52 <br><a href="#">Заказать звонок</a></p>
+                <p>тел.: (067) 847 41 47<br><span style="padding-left:37px;">(050) 000 00 00</span> <br><a href="#">Заказать звонок</a></p>
                 <p>почта: <br>info@realy.com.ua</p>
               </div>
             
               <div class="footer-link">
-                <ul> 
+                <!-- <ul> 
                   <li><a href="#">Акции и скидки</a></li>
                   <li><a href="#">Оплата и доставка</a></li>
                   <li><a href="#">Полиграфический словарь</a></li>
                   <li><a href="#">Тех. требования к макету</a></li>
-                </ul>
+                </ul> -->
 
               </div>
             </div>
           </div>
         </footer>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="/libs/owl-carousel/owl.carousel.min.js"></script>
+        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- <script src="/libs/owl-carousel/owl.carousel.min.js"></script> -->
         <script src="/js/main.js"></script>
+        <script src="/libs/YTPlayer-master/jquery.mb.YTPlayer.min.js"></script>
+        <script>
+
+          var myPlayer;
+          jQuery(function () {
+            myPlayer = jQuery("#bgndVideo").YTPlayer({useOnMobile:true, mobileFallbackImage:"assets/mask-4.png"});
+      
+          });
+      
+        </script>
         <script>
             $('#header').prepend('<div id="menu-icon"><span class="first"></span><span class="second"></span><span class="third"></span></div>');
           
