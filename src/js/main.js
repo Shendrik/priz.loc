@@ -46,13 +46,13 @@
                         items:1
                     },
                     390:{
-                        items:2
+                        items:1
                     },
                     720:{
-                        items:3
+                        items:1
                     },
                     992:{
-                        items:4
+                        items:1
                     }
                 }
 
@@ -74,6 +74,27 @@
             });
 
 
+            $('#customers-testimonials').owlCarousel({
+                loop: true,
+                center: true,
+                items: 3,
+                margin: 0,
+                autoplay: true,
+                dots:true,
+                autoplayTimeout: 8500,
+                smartSpeed: 450,
+                responsive: {
+                  0: {
+                    items: 1
+                  },
+                  768: {
+                    items: 2
+                  },
+                  1170: {
+                    items: 3
+                  }
+                }
+            });
 
             
 
