@@ -59,18 +59,30 @@
             });
 
 
-            $("#slider_reviews").owlCarousel({
-                
-                autoplay:true,
-                items:1,
+            $("#slider_certificates").owlCarousel({
+                loop: true,
+                center: true,
+                items: 3,
                 // nav:true,
-                // dots:true,
-                autoplayTimeout:7000,
-                singleItem:true,
-                loop:true,
-               
-                
-
+                margin: 50,
+                autoplay: true,
+                dots:true,
+                autoplayTimeout: 8500,
+                smartSpeed: 450,
+                responsive: {
+                  0: {
+                    items: 1
+                  },
+                  768: {
+                    items: 2
+                  },
+                  992: {
+                    items: 2
+                  },
+                  1170: {
+                    items: 3
+                  }
+                }
             });
 
 
