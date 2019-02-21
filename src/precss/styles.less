@@ -614,6 +614,10 @@ td.text-right {
     background: url(/img/img-bg/bg-header.jpg);
     margin: 0 auto;
 
+    .wrapp {
+        height: 80vh;   
+    }
+
     .header {
         // display: flex;
         
@@ -626,19 +630,21 @@ td.text-right {
             
             img {
                 .xs-block ({
-                    width: 60%;
+                    width: 50%;
                 });
             }
             
             .phone {
-        
+                line-height: 1.2 inherit;
                 p {
+                    display: block;
                     font-size: 20px;
                     line-height: 1.2;
                     color: #fff;
-                    padding-right: 10px;
+                    // padding-right: 10px;
                     text-align: right;
                     text-shadow: 1px 1px 1px black; 
+                    white-space: nowrap;
                         
                     span {
                         white-space: nowrap;
@@ -647,6 +653,7 @@ td.text-right {
                     .xs-block ({
                         font-size: 15px;
                         padding-top: 15px;
+                        line-height: 1,2 inherit;
                     });
                 }
             }
@@ -664,10 +671,14 @@ td.text-right {
     } 
 
     .slogan {
-        position: relative;
-        top: 150px;
-        align-self: center;
-        margin: auto;
+        // position: relative;
+        // top: 150px;
+        // align-self: center;
+        // margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         text-align: center;
 
         h1 {
@@ -680,8 +691,12 @@ td.text-right {
             color: white;
             margin-bottom: 20px;
 
+            .md-block ({
+                font-size: 35px; 
+            });
+
             .xs-block ({
-                font-size: 20px; 
+                font-size: 26px; 
             });
             
         }
