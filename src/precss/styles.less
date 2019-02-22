@@ -124,6 +124,8 @@ display: inline;
     padding: 0 0;
 }
 
+
+
 .wrapper-padding {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -179,8 +181,13 @@ display: inline;
 }
 
 .wrapper-pain {
+    // display: flex;
+    // justify-self: center;
     background-image: url(/img/img-bg/bg-pain.jpg);
-    opacity: 0.7;
+    background-position: center;
+    background-repeat: no-repeat;
+    // opacity: 0.7;
+
 }
 
 .advantage {
@@ -200,6 +207,30 @@ display: inline;
     
 }
 
+
+
+// Бонусы
+#slider_bonus {
+
+    div {
+
+        h3 {
+            font-size: 22px;
+        }
+        
+        p {
+            font-size: 20px;
+            text-align: center;
+            color: #fff;
+            text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.800); 
+        }
+    }
+}
+
+
+
+
+// команда
 .team-block {
     
         background-image: url(http://s.lpmcdn.com/lpfile/e/0/d/e0d15fc3f3aca9f5066383dee7d4a24b.png) ;
@@ -556,7 +587,11 @@ td.text-right {
 .footer-bkg {
     width: 100%;
     padding: 50px 0;
-    background-color: antiquewhite;
+    background-color:#f2f2f2 ;
+
+    p {
+        color: #0a0a0a;
+    }
 
 
 
@@ -580,7 +615,7 @@ td.text-right {
         flex-direction: column;
         // margin: auto;
         justify-self: flex-end;
-
+        color: #0a0a0a;
         p:first-child {
             padding: 0 0 30px 0;
         }
@@ -595,6 +630,7 @@ td.text-right {
 
     ul {
         margin: 0 0 0 auto;
+        
         .xs-block ({
             padding: 40px 0 0 0;
             margin: 0 0 0 0;
@@ -701,18 +737,20 @@ td.text-right {
             
         }
 
-        #buttons {
-            margin: auto;
-            text-align: center; 
-
-        }
+    
     
 }
 
 
+.wrapper-btn {
+    // width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
+#buttons {
 
-
+}
 
   .btn {
     border-radius: 5px;
@@ -721,7 +759,7 @@ td.text-right {
     text-decoration: none;
     margin: 20px;
     color: #fff;
-    position: relative;
+    // position: relative;
     display: inline-block;
   }
   
@@ -739,39 +777,6 @@ td.text-right {
   .red:hover {
     background-color: #FF6656;
   }
-
-// .sub-main{
-//     width: 30%;
-//     margin:22px;
-    
-//   }
-  
-//   .button-one{
-//     text-align: center;
-//     cursor: pointer;
-//     font-size:24px;
-//     margin: 0 0 0 100px;
-//   }
-  
-//   .button-one {
-//     padding:20px 20px;
-//     outline: none;
-//     background-color: #27ae60;
-//     border: none;
-//     border-radius:5px;
-//     box-shadow: 0 9px #95a5a6;
-//   }
-  
-//   .button-one:hover{
-//     background-color: #2ecc71;
-//   }
-  
-//   .button-one:active {
-//     background-color: #2ecc71;
-//     box-shadow: 0 5px #95a5a6;
-//     transform: translateY(4px);
-//   }
-
 
 
 

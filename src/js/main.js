@@ -31,13 +31,13 @@
             });
 
 
-            $("#slider_partners").owlCarousel({
+            $("#slider_bonus").owlCarousel({
                 
                 autoplay:true,
                 items:1,
                 // nav:true,
                 // dots:true,
-                autoplayTimeout:3000,
+                autoplayTimeout:6500,
                 singleItem:true,
                 loop:true,
                 responsiveClass:true,
@@ -67,7 +67,7 @@
                 margin: 50,
                 autoplay: true,
                 dots:true,
-                autoplayTimeout: 8500,
+                autoplayTimeout: 6500,
                 smartSpeed: 450,
                 responsive: {
                   0: {
