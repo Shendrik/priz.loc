@@ -31,6 +31,34 @@
             });
 
 
+            $("#slider_pain").owlCarousel({
+                
+              autoplay:true,
+              items:1,
+              // nav:true,
+              // dots:true,
+              autoplayTimeout:6500,
+              singleItem:true,
+              loop:true,
+              responsiveClass:true,
+              responsive:{
+                  320:{
+                      items:1
+                  },
+                  390:{
+                      items:1
+                  },
+                  720:{
+                      items:1
+                  },
+                  992:{
+                      items:1
+                  }
+              }
+
+          });
+
+
             $("#slider_bonus").owlCarousel({
                 
                 autoplay:true,
