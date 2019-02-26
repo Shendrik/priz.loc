@@ -10,6 +10,7 @@
 
         <!-- Owl Carousel -->
         <link rel="stylesheet" href="/libs/owl-carousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
         <!-- <link rel="stylesheet" href="/libs/owl-carousel/assets/owl.theme.default.min.css"> -->
         <!-- <script src="https://maps.api.2gis.ru/2.0/loader.js"></script> -->
     </head>
@@ -143,12 +144,38 @@
                   <div><h3>Потеря времени</h3><p>Вы потратите 30 минут один раз в 3-4 недели. Никакого ежедневного, спешного и не всегда аккуратного бритья.</p></div>
                
                 </div>
-                <div class="wrapper-btn">
-                  <a href="#" id="buttons" class="btn red">Бесплтаная консультация</a>
-                </div>
-                </div> 
+                <!-- <div class="wrapper-btn">
+                  <a href="#" id="button" class="btn red">Бесплтаная консультация</a>
+                </div> -->
+
+                <!-- <a id="open-popup" href="#my-popup">Open popup</a> -->
+
+<!-- <div id="my-popup" class="mfp-hide white-popup">
+  Inline popup, try to close me
+</div> -->
+
+
+<!-- <a id="open-popup" href="#my-popup">Open popup</a>
+
+<div id="my-popup" class="mfp-hide white-popup">
+  Inline popup, try to close me
+</div>
+
+<a href="#form1" class="popup1">Отправить заявку</a> -->
+
+
+                
               </section>
             </div>
+              <!-- <div class="hidden">
+                <form id="form1">
+                  <input type="text" name="name" placeholder="Ваше имя" /><br>
+                  <input type="text" name="phone" placeholder="Ваш телефон" /><br>
+                  <button>Отправить</button>
+              
+                </form>
+              </div> -->
+           
             <!-- <div class="wrapper-pain">
               <section class="wrapper wrapper-padding">
                 <h2>Почему выбирают нас</h2>
@@ -157,7 +184,16 @@
             </div> -->
             <!-- Конец блока Почему выбирают нас -->
 
+            <a id="open-popup" href="#my-popup">Open popup</a>
 
+            <div id="my-popup" class="mfp-hide white-popup">
+              <form id="form">
+                <input type="text" name="name" placeholder="Ваше имя" /><br>
+                <input type="text" name="phone" placeholder="Ваш телефон" /><br>
+                <button>Отправить</button>
+            
+              </form>
+            </div>
 
           <!-- Наши преимущества -->
             <div class="wrapper-bkg">
@@ -584,11 +620,14 @@
             </div>
           </div>
         </footer>
+
+       
         <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="/libs/owl-carousel/owl.carousel.min.js"></script>
         <script src="/js/main.js"></script>
         <script src="/libs/YTPlayer-master/jquery.mb.YTPlayer.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
         <script type="text/javascript" src="https://w108251.yclients.com/widgetJS" charset="UTF-8"></script>
         <script>
 
@@ -607,6 +646,7 @@
             $(this).toggleClass("active");
         });
         </script>
+        
         
     </body>
 </html>

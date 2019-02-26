@@ -1,5 +1,5 @@
         // Меню
-        $(document).ready(function () {
+        // $(document).ready(function () {
 
         //     $('#header').prepend('<div id="menu-icon"><span class="first"></span><span class="second"></span><span class="third"></span></div>');
           
@@ -8,7 +8,7 @@
         //       $(this).toggleClass("active");
         //   });
 
-        });
+        // });
 
 
             
@@ -136,7 +136,57 @@
                 }
             });
 
+          
             
+
+
+
+
+            $('#open-popup').magnificPopup({
+              type:'inline',
+              callbacks: {
+                open: function() {
+                  
+                  
+                 // this part overrides "close" method in MagnificPopup object
+                  $.magnificPopup.instance.close = function () {
+                  
+                      $("#my-popup").submit(function() {
+
+                        $.ajax({
+                          type: "POST",
+                          url: "mail.php",
+                          data: $(this).serialize()
+                        }).done(function() {
+                          alert("Спасибо");
+                          setTimeout(function() {
+
+                          }, 1000);
+                        });
+                        return false; 
+                      });
+
+                      // if (!confirm("Are you sure?")) {
+                      //     return;
+                      // }
+                  
+                       // "proto" variable holds MagnificPopup class prototype
+                       // The above change that we did to instance is not applied to the prototype, 
+                       // which allows us to call parent method:
+                       $.magnificPopup.proto.close.call(this);
+                  }; 
+                  // you may override any method like so, just note that it's applied globally
+                  
+                }
+              }
+            });
+            
+            
+
 
           
         });
+
+    
+        
+        
