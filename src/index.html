@@ -164,6 +164,25 @@
 <a href="#form1" class="popup1">Отправить заявку</a> -->
 
 
+
+
+
+<div class="wrapper-btn">
+  <a id="open-popup" href="#my-popup" class="btn red">Бесплтаная консультация</a>
+</div>
+<div id="my-popup" class="mfp-hide white-popup">
+  <form id="form">
+    <input type="hidden" name="project_name" value="priz.studio">
+    <input type="hidden" name="admin_email" value="sh3ndrik@gmail.com">
+    <input type="hidden" name="form_subject" value="Заявка на бесплатную консультацию">
+    <input type="text" name="Имя" placeholder="Ваше имя" /><br>
+    <input type="text" name="Телефон" placeholder="Ваш телефон" required/><br>
+    <input type="text" name="email" placeholder="Ваша электронная почта" /><br>
+    <textarea name="Вопрос" cols="40" rows="3" placeholder="Ваш вопрос"></textarea>
+    <button>Отправить</button>
+
+  </form>
+</div>
                 
               </section>
             </div>
@@ -184,16 +203,7 @@
             </div> -->
             <!-- Конец блока Почему выбирают нас -->
 
-            <a id="open-popup" href="#my-popup">Open popup</a>
-
-            <div id="my-popup" class="mfp-hide white-popup">
-              <form id="form">
-                <input type="text" name="name" placeholder="Ваше имя" /><br>
-                <input type="text" name="phone" placeholder="Ваш телефон" /><br>
-                <button>Отправить</button>
             
-              </form>
-            </div>
 
           <!-- Наши преимущества -->
             <div class="wrapper-bkg">
@@ -498,7 +508,7 @@
                 </div>
                 </div> 
                 <div class="wrapper-btn">
-                  <a href="#" id="buttons" class="btn red">Записаться на депиляцию</a>
+                  <a href="#" id="buttons" class="ms_booking btn red">Записаться на депиляцию</a>
                 </div>
               </section>
             </div>
@@ -638,15 +648,18 @@
           });
       
         </script>
-        <script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <!-- <script>
             $('#header').prepend('<div id="menu-icon"><span class="first"></span><span class="second"></span><span class="third"></span></div>');
           
           $("#menu-icon").on("click", function(){
             $("nav").slideToggle();
             $(this).toggleClass("active");
         });
-        </script>
-        
+        </script> -->
+          
+       
+      
         
     </body>
 </html>
