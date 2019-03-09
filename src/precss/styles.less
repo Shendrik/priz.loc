@@ -632,10 +632,13 @@ td.text-right {
     }
     
     .footer-link ul {
-    margin: 0 0 0 auto;
+    // margin: 0 0 0 auto;
+    display: inline-block;
+    text-align: right;
     .xs-block ({
         margin: 0;
-        padding: 0 0 0 0;
+        text-align: left;
+        // padding: 0 0 0 0;
     })
     }
     
@@ -803,90 +806,6 @@ td.text-right {
 
 
 
-// Страница продукта
-
-.bradcrams {
-    li {
-        float: left;
-
-        &::after {
-            content: "/";
-        }
-
-        &:last-child::after {
-            content: "";
-        }
-
-        &>a:last-child {
-           color: #1e262d; 
-        }
-    }
-}
-
-.product-img-text {
-    
-    
-    .row-flex();
-
-
-    .product-img {
-        .col();
-        .size(8);
-        .size-md(10);
-        .size-sm(24);
-    }
-    
-        .product-text {
-        .col();
-        .size(16);
-        .size-md(14);
-        .size-sm(24);
-    }
-
-
-}
-
-.dop-info {
-
-    ul {
-        .row-flex();
-
-        li {
-            margin-bottom: 10px;
-            .col();
-            .size(8);
-            .size-md(8);
-            .size-sm(8);
-            .size-xs(12);
-            .size-xxs(24);
-        }
-
-    }
-    
-
-    
-}
-
-
-.work-img {
-    .row-flex();
-
-        li {
-            margin-bottom: 10px;
-            .col();
-            .size(6);
-            .size-md(8);
-            .size-sm(8);
-            .size-xs(12);
-            .size-xxs(24); 
-        }
-}
-
-
-
-
-
-
 
 // Отзывы
 
@@ -984,11 +903,14 @@ display: inline-block;
       button {
           width: 100%;
           padding: 5px;
+          cursor: pointer;
           background-color: #009900;
           border-radius: 10px;
           color: #fff;
           font-size: 20px;
           font-weight: 200;
+          
+         
       }
   }
 }
